@@ -1,6 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face {
+  font-family: 'Chakie';
+  src: url('../src/components/assets/Fonts/Chakie.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@layer base {
+  html {
+    @apply font-sans;
+  }
+}
 
 *,
 *::before,
@@ -13,4 +25,16 @@
 html,
 body {
   background-color: black;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Chakie, sans-serif;
+  font-weight: 400;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
 }
