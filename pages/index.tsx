@@ -3,6 +3,10 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Nav from '../src/components/Nav/Nav'
 import Hero from '../src/components/Hero/Hero'
+import Section2 from '../src/components/Section2/Section2'
+import Section3 from '../src/components/Section3/Section3'
+import FAQ from '../src/components/FAQ/FAQ'
+import SectionDivider from '../src/components/Divider/SectionDivider'
 
 const Home: NextPage = () => {
   return (
@@ -17,6 +21,11 @@ const Home: NextPage = () => {
       </Head>
       <Nav />
       <Hero />
+      <SectionDivider />
+      <Section2 />
+      <SectionDivider />
+      <Section3 />
+      <FAQ />
     </>
   )
 }
