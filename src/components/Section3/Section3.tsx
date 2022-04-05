@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import GridsWithBanner from '../assets/Images/GridsWithBanner.svg'
-import Banner from '../assets/Images/MetaPuppetsBanner.png'
 
 const style = {
   container: `px-5`,

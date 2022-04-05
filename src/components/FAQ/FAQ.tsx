@@ -2,12 +2,12 @@ import Accordion from './Accordion'
 const style = {
   flexContainer: `
         flex 
-        flex-col h-full items-center border-2 border-white text-white
+        flex-col h-full items-center text-white
     `,
   subContainer: `
     flex
     flex-col 
-     justify-center border-2 h-screen w-10/12  border-emerald-500 text-white px-24 my-10
+     justify-center h-screen w-10/12  text-white px-48 my-10
     `,
 }
 

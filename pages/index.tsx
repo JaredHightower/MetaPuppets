@@ -7,6 +7,7 @@ import Section2 from '../src/components/Section2/Section2'
 import Section3 from '../src/components/Section3/Section3'
 import FAQ from '../src/components/FAQ/FAQ'
 import SectionDivider from '../src/components/Divider/SectionDivider'
+import Roadmap from '../src/components/RaodMap/Roadmap'
 
 const Home: NextPage = () => {
   return (
@@ -25,6 +26,9 @@ const Home: NextPage = () => {
       <Section2 />
       <SectionDivider />
       <Section3 />
+      <SectionDivider />
+      <Roadmap />
+      <SectionDivider />
       <FAQ />
     </>
   )

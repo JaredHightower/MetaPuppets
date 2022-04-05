@@ -1,5 +1,5 @@
 const style = {
-  dividerStyle: `h-1  bg-teal-400 mx-10 my-32`,
+  dividerStyle: `h-0.5  bg-teal-400 mx-10 my-32`,
 }
 
 export default function SectionDivider() {
