@@ -25,15 +25,16 @@ const style = {
   subText: `
   text-sm
   font-sans-Rajdhani font-[200] 
-  lg:text-2xl lg:font-[300] lg: w-3/4
+  lg:text-xl lg:font-[300] lg: w-3/4
   xl:font-[400]
   `,
 
   flexContainer: `
   relative
   flex
-  flex-col text-white py-4 sm:px-4 lg:flex-row 
-  lg:pr-64  xl:pr-72
+  flex-col text-white py-4 sm:px-4 
+  lg:flex-row lg:pr-64 lg:py-20 
+  xl:pr-72 
  `,
 
   heroTextContent: `
@@ -51,7 +52,10 @@ const style = {
 
   puppetImgs: `flex flex-row mx-2 gap-5`,
   marquee: ` absolute h-30 ml-8 z-1`,
-  imageContainer: `absolute inset-y-1/3`,
+  imageContainer: `
+  absolute 
+  lg:inset-y-1/3 lg:w-[57vw] lg:py-6
+  `,
 }
 
 export default function Hero() {
@@ -61,9 +65,9 @@ export default function Hero() {
         <div className={style.imageContainer}>
           <Marquee
             className={style.marquee}
-            style={{ width: '57vw' }}
             direction={'right'}
             gradient={false}
+            speed={20}
           >
             <div className={style.puppetImgs}>
               <Image height={290} src={P1} />
@@ -87,7 +91,7 @@ export default function Hero() {
             The Meta Puppets is an NFT project centered on building practical
             software for our community to benefit directly.
           </span>
-          {/* <button className={style.button}>FLEX LISTING</button> */}
+          <button className={style.button}>FLEX LISTING</button>
         </div>
       </div>
     </>

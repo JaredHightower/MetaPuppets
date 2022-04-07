@@ -10,6 +10,13 @@ module.exports = {
       fontFamily: {
         'sans': ['Rajdhani', ...defaultTheme.fontFamily.sans],
       },
+      backgroundImage: {
+        'hero-image': "url('/src/components/assets/Images/Banner.png')",
+        'footer-texture': "url('/img/footer-texture.png')",
+      },
+      zIndex: {
+        'negative': '-1',
+      },
     },
   },
   plugins: [],
