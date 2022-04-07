@@ -22,8 +22,8 @@ const Home: NextPage = () => {
         />
       </Head>
       <Nav />
-      {/* <Hero2 /> */}
-      <Hero />
+      <Hero2 />
+      {/* <Hero /> */}
       <SectionDivider />
       <Section2 />
       <SectionDivider />

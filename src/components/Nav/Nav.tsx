@@ -13,17 +13,7 @@ const navigation = [
 
 export default function Nav() {
   return (
-    <div className="lg:pb-18 relative z-10 border-2 border-teal-400 bg-black pb-8 sm:pb-16 md:pb-20 lg:w-full lg:max-w-2xl xl:pb-14">
-      <svg
-        className="absolute inset-y-0 right-0 hidden h-full w-48 translate-x-1/2 transform  lg:block"
-        fill="currentColor"
-        viewBox="0 0 100 100"
-        preserveAspectRatio="none"
-        aria-hidden="true"
-      >
-        <polygon className="stroke-teal-400" points="50,0 100,0 50,100 0,100" />
-      </svg>
-
+    <div className="lg:pb-18 relative z-10 border-2 border-teal-400 bg-black pb-8 sm:pb-16 md:pb-20 lg:w-full lg:max-w-2xl xl:pb-10">
       <Popover>
         <div className="relative px-4 pt-6 sm:px-6 lg:px-8">
           <nav
@@ -40,7 +30,7 @@ export default function Nav() {
                   />
                 </a>
                 <div className="-mr-2 flex items-center md:hidden">
-                  <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                  <Popover.Button className="inline-flex items-center justify-center rounded-md bg-black p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-teal-400">
                     <span className="sr-only">Open main menu</span>
                     <BiMenuAltRight className="h-6 w-6" aria-hidden="true" />
                   </Popover.Button>
@@ -59,9 +49,9 @@ export default function Nav() {
               ))}
               <a
                 href="#"
-                className="font-medium text-indigo-600 hover:text-indigo-500"
+                className="font-medium text-teal-400 hover:text-teal-500"
               >
-                Log in
+                Connect
               </a>
             </div>
           </nav>
@@ -90,7 +80,7 @@ export default function Nav() {
                   />
                 </div>
                 <div className="-mr-2">
-                  <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                  <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-teal-400">
                     <span className="sr-only">Close main menu</span>
                     <GrFormClose className="h-6 w-6" aria-hidden="true" />
                   </Popover.Button>

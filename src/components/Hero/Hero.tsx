@@ -50,11 +50,11 @@ const style = {
     border-[1px] border-teal-500 hover:bg-teal-400 hover:text-black transition ease-in-out duration-700
     `,
 
-  puppetImgs: `flex flex-row mx-2 gap-5`,
-  marquee: ` absolute h-30 ml-8 z-1`,
+  puppetImgs: `flex flex-row mx-2 gap-5 h-full`,
+  marquee: ` relative h-full ml-8 z-1`,
   imageContainer: `
   absolute 
-  lg:inset-y-1/3 lg:w-[57vw] lg:py-6
+  lg:inset-y-1/3 lg:w-[57vw] h-full lg:py-6
   `,
 }
 
@@ -62,27 +62,26 @@ export default function Hero() {
   return (
     <>
       <div className={style.flexContainer}>
-        <div className={style.imageContainer}>
-          <Marquee
-            className={style.marquee}
-            direction={'right'}
-            gradient={false}
-            speed={20}
-          >
-            <div className={style.puppetImgs}>
-              <Image height={290} src={P1} />
-              <Image height={290} src={P2} />
-              <Image height={290} src={P3} />
-              <Image height={290} src={P4} />
-              <Image height={290} src={P5} />
-              <Image height={290} src={P6} />
-              <Image height={290} src={P7} />
-              <Image height={290} src={P8} />
-              <Image height={290} src={P9} />
-              <Image height={290} src={P10} />
-            </div>
-          </Marquee>
-        </div>
+        <Marquee
+          className={style.marquee}
+          direction={'right'}
+          gradient={false}
+          speed={30}
+        >
+          <div className={style.puppetImgs}>
+            <Image height={290} src={P1} />
+            <Image height={290} src={P2} />
+            <Image height={290} src={P3} />
+            <Image height={290} src={P4} />
+            <Image height={290} src={P5} />
+            <Image height={290} src={P6} />
+            <Image height={290} src={P7} />
+            <Image height={290} src={P8} />
+            <Image height={290} src={P9} />
+            <Image height={290} src={P10} />
+          </div>
+        </Marquee>
+
         <Image height={671} width={1153} src={PuppetSVG} />
 
         <div className={style.heroTextContent}>
