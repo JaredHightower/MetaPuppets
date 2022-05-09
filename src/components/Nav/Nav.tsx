@@ -13,7 +13,7 @@ const navigation = [
 
 export default function Nav() {
   return (
-    <div className="lg:pb-18 relative z-10 border-2 border-teal-400 bg-black pb-8 sm:pb-16 md:pb-20 lg:w-full lg:max-w-2xl xl:pb-10">
+    <div className="lg:pb-18 relative z-10 border-2 border-black bg-black pb-8 sm:pb-16 md:pb-10 lg:w-full lg:max-w-2xl xl:pb-10">
       <Popover>
         <div className="relative px-4 pt-6 sm:px-6 lg:px-8">
           <nav
@@ -24,10 +24,6 @@ export default function Nav() {
               <div className="flex w-full items-center justify-between md:w-auto">
                 <a href="#">
                   <span className="sr-only">Workflow</span>
-                  <img
-                    className="h-8 w-auto sm:h-10"
-                    src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
-                  />
                 </a>
                 <div className="-mr-2 flex items-center md:hidden">
                   <Popover.Button className="inline-flex items-center justify-center rounded-md bg-black p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-teal-400">
